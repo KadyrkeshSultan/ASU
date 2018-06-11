@@ -2,8 +2,8 @@
 {
     public class BaseEntityFilter : BaseSearchFilter
     {
-        public decimal? OwnerId { get; set; }
-        public decimal? ParentId { get; set; }
+        public string OwnerId { get; set; }
+        public string ParentId { get; set; }
         public string[] Types { get; set; }
 
         public BaseEntityFilter()

@@ -2,7 +2,7 @@
 {
     public class AllocationDocument : BaseVerificatorDocument
     {
-        public decimal OrderId { get; set; }
+        public string OrderId { get; set; }
 
         public AllocationDocument()
         {

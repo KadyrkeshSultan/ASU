@@ -6,7 +6,7 @@ namespace ASU.Services.Base
         where TDTO : BaseDTO
     {
         TDTO Create();
-        void Delete(decimal id);
-        decimal Save(TDTO dto);
+        void Delete(string id);
+        string Save(TDTO dto);
     }
 }

@@ -6,17 +6,17 @@ namespace ASU.DTO.Documents.Validation
 {
     public class ValidationResult
     {
-        public decimal Code { get; set; }
+        public string Code { get; set; }
         public string String { get; set; }
         public eResult Result
         {
             get
             {
-                if (this.Code == new decimal(0))
+                if (this.Code == new string(0))
                 {
                     return eResult.Ok;
                 }
-                if (this.Code >= new decimal(0))
+                if (this.Code >= new string(0))
                 {
                     return eResult.Warning;
                 }

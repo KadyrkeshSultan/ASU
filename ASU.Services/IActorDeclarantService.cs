@@ -11,6 +11,6 @@ namespace ASU.Services
         IBaseReadOnlyService<Declarant>, 
         IBaseFilteredService<Declarant, BaseActorFilter>
     {
-        void CheckDocument(decimal id);
+        void CheckDocument(string id);
     }
 }

@@ -4,7 +4,7 @@
     {
         public string Mnemo { get; set; }
         public string Name { get; set; }
-        public decimal? OriginalId { get; set; }
+        public string OriginalId { get; set; }
 
         public BaseActor()
         {

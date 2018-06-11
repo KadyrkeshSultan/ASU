@@ -11,6 +11,6 @@ namespace ASU.Services.Base
     where TFilter : BaseEntityFilter
     {
         IEnumerable<TEntity> GetFilteredByOrganization(string searchString);
-        decimal Save(TEntity dto);
+        string Save(TEntity dto);
     }
 }

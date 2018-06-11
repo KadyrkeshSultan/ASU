@@ -9,7 +9,7 @@ namespace ASU.Services.Base
         where TActor : BaseActor
         where TFilter : BaseActorFilter
     {
-        DynamicEntity GetActorEntity(decimal id);
+        DynamicEntity GetActorEntity(string id);
         IEnumerable<TActor> GetFilteredString(string search);
         void SaveActorEntity(DynamicEntity entity);
     }

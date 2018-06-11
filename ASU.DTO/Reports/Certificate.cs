@@ -18,7 +18,7 @@ namespace ASU.DTO.Reports
         public DateTime Date { get; set; }
         public Device Device { get; set; }
         public string DKP { get; set; }
-        public decimal DocId { get; set; }
+        public string DocId { get; set; }
         public DateTime? ExpirationDate { get; set; }
         public string Methodology { get; set; }
         public bool Russian { get; set; }

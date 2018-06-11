@@ -6,8 +6,8 @@ namespace ASU.Services.Base
     public interface IBaseDocumentService<TDocument> : IBaseReadOnlyService<TDocument>
         where TDocument : BaseDocument
     {
-        decimal Cancel(decimal doc, DateTime? change = null);
-        decimal Confirm(decimal doc, DateTime? change = null);
-        decimal Save(TDocument dto, DateTime? change = null);
+        string Cancel(string doc, DateTime? change = null);
+        string Confirm(string doc, DateTime? change = null);
+        string Save(TDocument dto, DateTime? change = null);
     }
 }

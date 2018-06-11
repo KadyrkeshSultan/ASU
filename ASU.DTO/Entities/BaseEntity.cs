@@ -6,7 +6,7 @@ namespace ASU.DTO.Entities
     {
         public BaseActor Author { get; set; }
         public string Note { get; set; }
-        public decimal OriginalId { get; set; }
+        public string OriginalId { get; set; }
         public BaseActor Owner { get; set; }
         public BaseEntity Parent { get; set; }
 

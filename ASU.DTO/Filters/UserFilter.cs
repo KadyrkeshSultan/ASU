@@ -2,7 +2,7 @@
 {
     public class UserFilter : BaseFilter
     {
-        public decimal? OrganizationId { get; set; }
+        public string OrganizationId { get; set; }
 
         public UserFilter()
         {
