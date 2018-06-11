@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using ASU.Web.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ASU.Web.Controllers
 {
@@ -13,6 +14,12 @@ namespace ASU.Web.Controllers
         public IActionResult Index()
         {
             return View();
+        }
+
+        [Authorize]
+        public IActionResult Users()
+        {
+            return Content(User.Identity.Name);
         }
 
         public IActionResult About()
