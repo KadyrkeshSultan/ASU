@@ -9,6 +9,6 @@ namespace ASU.Services.Base
     where TDocument : BaseDatedDocument
     where TValResult : ValidationResult
     {
-        TValResult Validate(string doc, string targetStateMnemo);
+        TValResult Validate(decimal doc, string targetStateMnemo);
     }
 }

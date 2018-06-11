@@ -12,7 +12,7 @@ namespace ASU.DTO.Documents
         public string DKP { get; set; }
         public DateTime? ExpirationDate { get; set; }
         public MeasureDevice MeasureDevice { get; set; }
-        public string Parent { get; set; }
+        public decimal? Parent { get; set; }
         public string VerificationComment { get; set; }
         public IList<VerificationDevice> VerificationDevices { get; set; }
         public SimpleDTO VerificationPassing { get; set; }

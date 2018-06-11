@@ -10,6 +10,6 @@ namespace ASU.Services.Base
     where TDocument : BaseDatedDocument
     where TValResult : DetailItemValidationResult
     {
-        IEnumerable<TValResult> Validate(string doc, string targetStateMnemo);
+        IEnumerable<TValResult> Validate(decimal doc, string targetStateMnemo);
     }
 }

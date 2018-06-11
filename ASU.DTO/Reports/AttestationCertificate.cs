@@ -19,7 +19,7 @@ namespace ASU.DTO.Reports
         public string Declarant { get; set; }
         public string DeviceName { get; set; }
         public string DKP { get; set; }
-        public string DocId { get; set; }
+        public decimal DocId { get; set; }
         public DateTime? ExpirationDate { get; set; }
         public bool IsExtraordinary => this.AttestationType == "TeAttestationTypes_Extraordinary";
         public bool IsPeriodic => this.AttestationType == "TeAttestationTypes_Periodic";

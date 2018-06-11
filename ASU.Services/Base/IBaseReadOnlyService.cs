@@ -4,6 +4,6 @@ namespace ASU.Services.Base
 {
     public interface IBaseReadOnlyService<TDTO> where TDTO: BaseDTO
     {
-        TDTO Get(string id);
+        TDTO Get(decimal id);
     }
 }

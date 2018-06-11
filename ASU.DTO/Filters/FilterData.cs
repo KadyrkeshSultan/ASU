@@ -12,7 +12,7 @@ namespace ASU.DTO.Filters
             this.Params = new Dictionary<string, object>();
         }
 
-        public static FilterData GetById(string filter, string id)
+        public static FilterData GetById(string filter, decimal id)
         {
             FilterData filterDatum = new FilterData()
             {

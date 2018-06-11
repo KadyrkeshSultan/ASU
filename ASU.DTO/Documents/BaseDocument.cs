@@ -4,7 +4,7 @@ namespace ASU.DTO.Documents
 {
     public class BaseDocument : BaseDTO
     {
-        public string Code { get; set; }
+        public decimal Code { get; set; }
         public string DocState { get; set; }
         public string DocType { get; set; }
         public DateTime? LastChange { get; set; }
