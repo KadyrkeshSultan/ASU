@@ -26,7 +26,7 @@ namespace ASU.Web
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<AppDbContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("ASUConnection")));
+                options.UseSqlServer(Configuration.GetConnectionString("ASUConnection"), b => b.MigrationsAssembly("ASU.DTO")));
 
             services.Configure<CookiePolicyOptions>(options =>
             {
