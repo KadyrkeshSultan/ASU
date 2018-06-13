@@ -2,7 +2,7 @@
 
 namespace ASU.DTO.Migrations
 {
-    public partial class ASUInit : Migration
+    public partial class Init : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -10,7 +10,7 @@ namespace ASU.DTO.Migrations
                 name: "BaseActor",
                 columns: table => new
                 {
-                    Id = table.Column<decimal>(nullable: false),
+                    Id = table.Column<string>(nullable: false),
                     IsSaved = table.Column<bool>(nullable: false),
                     Mnemo = table.Column<string>(nullable: true),
                     Name = table.Column<string>(nullable: true),
@@ -25,13 +25,13 @@ namespace ASU.DTO.Migrations
                 name: "Users",
                 columns: table => new
                 {
-                    Id = table.Column<decimal>(nullable: false),
+                    Id = table.Column<string>(nullable: false),
                     IsSaved = table.Column<bool>(nullable: false),
                     IsActive = table.Column<bool>(nullable: false),
                     Login = table.Column<string>(nullable: true),
-                    OrganizationId = table.Column<decimal>(nullable: true),
+                    OrganizationId = table.Column<string>(nullable: true),
                     Password = table.Column<string>(nullable: true),
-                    PersonId = table.Column<decimal>(nullable: true)
+                    PersonId = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {

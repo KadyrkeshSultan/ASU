@@ -21,7 +21,8 @@ namespace ASU.DTO.Migrations
 
             modelBuilder.Entity("ASU.DTO.Actors.BaseActor", b =>
                 {
-                    b.Property<decimal>("Id");
+                    b.Property<string>("Id")
+                        .ValueGeneratedOnAdd();
 
                     b.Property<bool>("IsSaved");
 
@@ -38,7 +39,8 @@ namespace ASU.DTO.Migrations
 
             modelBuilder.Entity("ASU.DTO.User", b =>
                 {
-                    b.Property<decimal>("Id");
+                    b.Property<string>("Id")
+                        .ValueGeneratedOnAdd();
 
                     b.Property<bool>("IsActive");
 
@@ -46,11 +48,11 @@ namespace ASU.DTO.Migrations
 
                     b.Property<string>("Login");
 
-                    b.Property<decimal?>("OrganizationId");
+                    b.Property<string>("OrganizationId");
 
                     b.Property<string>("Password");
 
-                    b.Property<decimal?>("PersonId");
+                    b.Property<string>("PersonId");
 
                     b.HasKey("Id");
 

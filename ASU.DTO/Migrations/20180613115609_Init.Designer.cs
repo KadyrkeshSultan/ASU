@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ASU.DTO.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20180611092329_ASUInit")]
-    partial class ASUInit
+    [Migration("20180613115609_Init")]
+    partial class Init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -23,7 +23,8 @@ namespace ASU.DTO.Migrations
 
             modelBuilder.Entity("ASU.DTO.Actors.BaseActor", b =>
                 {
-                    b.Property<decimal>("Id");
+                    b.Property<string>("Id")
+                        .ValueGeneratedOnAdd();
 
                     b.Property<bool>("IsSaved");
 
@@ -40,7 +41,8 @@ namespace ASU.DTO.Migrations
 
             modelBuilder.Entity("ASU.DTO.User", b =>
                 {
-                    b.Property<decimal>("Id");
+                    b.Property<string>("Id")
+                        .ValueGeneratedOnAdd();
 
                     b.Property<bool>("IsActive");
 
@@ -48,11 +50,11 @@ namespace ASU.DTO.Migrations
 
                     b.Property<string>("Login");
 
-                    b.Property<decimal?>("OrganizationId");
+                    b.Property<string>("OrganizationId");
 
                     b.Property<string>("Password");
 
-                    b.Property<decimal?>("PersonId");
+                    b.Property<string>("PersonId");
 
                     b.HasKey("Id");
 

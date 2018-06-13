@@ -2,7 +2,7 @@
 {
     public class BaseDTO
     {
-        public decimal Id { get; set; }
+        public string Id { get; set; }
         public bool IsSaved { get; set; }
 
         public BaseDTO()
