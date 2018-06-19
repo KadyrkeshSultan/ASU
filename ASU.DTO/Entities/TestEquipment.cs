@@ -1,5 +1,8 @@
 ﻿namespace ASU.DTO.Entities
 {
+    /// <summary>
+    /// Испытательное оборудование
+    /// </summary>
     public class TestEquipment : BaseEntity
     {
         //TODO : Country

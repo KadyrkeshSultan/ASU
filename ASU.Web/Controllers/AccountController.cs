@@ -140,7 +140,9 @@ namespace ASU.Web.Controllers
             {
                 var claims = new List<Claim>
                 {
+                    //TODO : Role User
                     new Claim(ClaimsIdentity.DefaultNameClaimType, user.Id)
+                    //new Claim(ClaimsIdentity.DefaultRoleClaimType, user.Role)
                 };
                 ClaimsIdentity claimsIdentity =
                 new ClaimsIdentity(claims, "Token", ClaimsIdentity.DefaultNameClaimType,

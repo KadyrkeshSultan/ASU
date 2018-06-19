@@ -15,8 +15,9 @@
         public string Number => base.Name;
         public string QualifiedName { get; set; }
 
-        public string Type => $"{this.QualifiedName} - {base.Mnemo}";
-
+        //public string Type => $"{this.QualifiedName} - {base.Mnemo}";
+        public MeasurementType MeasurementType { get; set; }
+        public string MeasurementTypeId { get; set; }
         /// <summary>
         /// Межпроверочный интервал
         /// </summary>
