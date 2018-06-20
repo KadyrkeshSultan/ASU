@@ -5,6 +5,9 @@
         public string AllowedByCat { get; set; }
         public string AllowedByClass { get; set; }
         public string AllowedByRandom { get; set; }
+        /// <summary>
+        /// Поверитель
+        /// </summary>
         public string DKP { get; set; }
         public string MDProducer { get; set; }
         public string MeasurmentRange { get; set; }

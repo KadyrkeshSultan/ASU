@@ -14,6 +14,7 @@ namespace ASU.DTO
         public DbSet<Verificator> Verificators { get; set; }
         public DbSet<TestEquipment> TestEquipments { get; set; }
         public DbSet<MeasurementType> MeasurementTypes { get; set; }
+        public DbSet<VerificationDevice> VerificationDevices { get; set; }
 
         public AppDbContext(DbContextOptions<AppDbContext> options)
             :base(options)
